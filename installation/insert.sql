@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS speedbombs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    plate VARCHAR(10) NOT NULL UNIQUE,
+    triggerSpeed INT NOT NULL,
+    activated BOOLEAN DEFAULT FALSE
+);
